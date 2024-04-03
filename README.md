@@ -1,11 +1,8 @@
-Examen Fullstack - Backend
-Requerimientos
-Java Development Kit (JDK) 8.
-Maven
-1. Ejecutar la aplicación
-Hacer uso del plugin para visual studio: Spring Initializr Java Suport y ejecutar BackendApplication.java con el botón Run en la esquina superior derecha.
+Frontend_Ramirez
+Este proyecto se generó con Angular CLI versión 17.3.0.
 
-O en la consola
+Servidor de desarrollo
+Ejecute ng serve para un servidor de desarrollo. Navegar a http://localhost:4200/. La aplicación se recargará automáticamente si cambia alguno de los archivos fuente.
 
-java -jar ubicación del .jar del proyecto
-La conexión estará en: http://localhost:8080.
+Construir
+Ejecute ng build para construir el proyecto. Los artefactos de compilación se almacenarán en el dist/directorio.
