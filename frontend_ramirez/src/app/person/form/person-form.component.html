@@ -1,0 +1,71 @@
+<div class="ard bg-dark text-white">
+    <div class="card-header">
+       <h5 class="card-title">
+        @if(person){
+            Editar
+        }@else{
+            Nueva
+        }
+        Persona
+       </h5> 
+    </div>
+    <div class="card-body">
+        @if(form){
+            <form [formGroup] = "form" (ngSubmit)="guardar()">
+                <div class="form-group row">
+                  <label for="nombre" class="col-form-label col-sm-2">Nombre</label>
+                  <div class="">
+                    <input type="text" class="form-control col-sm-6" name="nombre" formControlName="nombre">
+                  </div>
+                </div>
+          
+                <div class="form-group row">
+                  <label for="apellido" class="form-label">Apellido</label>
+                  <div class="">
+                    <input type="text" class="form-control" name="apellido" formControlName="apellido">
+                  </div>
+                </div>
+          
+                <div class="form-group row">
+                  <label for="email" class="form-label">Fecha de nacimiento (yyyy-MM-dd)</label>
+                  <div class="">
+                    <input type="text" class="form-control" name="fechaNacimiento" formControlName="fechaNacimiento">
+                  </div>
+                </div>
+        
+                <div class="form-group row">
+                    <label for="apellido" class="form-label">Puesto</label>
+                    <div class="">
+                      <input type="text" class="form-control" name="puesto" formControlName="puesto">
+                    </div>
+                  </div>
+        
+                  <div class="form-group row">
+                    <label for="apellido" class="form-label">Sueldo</label>
+                    <div class="">
+                      <input type="text" class="form-control" name="sueldo" formControlName="sueldo">
+                    </div>
+                  </div>
+          
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button">
+                        @if(person){
+                            Actualizar
+                        }@else{
+                            Crear
+                        }
+                    </button>
+          
+                </div>
+                <div class="col-sm-6">
+                    <button class="btn btn-danger" role="button" routerLink="/">cancelar</button>
+                </div>
+                </div>
+              </form>
+        }
+        
+      
+  
+    </div>
+  </div>
