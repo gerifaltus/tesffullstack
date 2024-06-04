@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS bd_garcia;
+CREATE DATABASE IF NOT EXISTS bd_ramirezValvere;
 
-USE bd_garcia;
+USE bd_ramirezValvere;
 
 CREATE TABLE IF NOT EXISTS person (
     id INT AUTO_INCREMENT PRIMARY KEY,
